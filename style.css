@@ -58,8 +58,8 @@ header .container .desc {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 0;
     top: 0;
+    left: 0;
     width: 400px;
     color: var(--black);
     cursor: default;
@@ -381,6 +381,7 @@ footer .cipta h5 {
 /* tag img */
 footer .cipta img {
     position: relative;
+    top: 0;
     width: 50px;
     height: 50px;
     margin: 0;
@@ -392,7 +393,6 @@ footer .cipta img {
 footer .contact {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
     margin: 0;
     color: var(--black);
 }
@@ -400,14 +400,14 @@ footer .contact {
 /* tag h2 */
 footer .contact h2 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: default;
 }
 
 /* tag span */
 footer .contact span {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     cursor: default;
 }
 
@@ -421,7 +421,6 @@ footer .contact i {
 footer .sosial {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
     margin: 0;
     color: var(--black);
 }
@@ -429,14 +428,14 @@ footer .sosial {
 /* tag h2 */
 footer .sosial h2 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: default;
 }
 
 /* tag span */
 footer .sosial span {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     cursor: default;
 }
 
