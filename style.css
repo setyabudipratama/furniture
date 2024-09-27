@@ -49,7 +49,8 @@ header {
 /* class container */
 header .container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -98,6 +99,7 @@ header .container .fa-circle-down:hover {
 
 /* class picture */
 header .container .picture {
+    margin: 0;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -142,9 +144,9 @@ section {
 /* class container */
 #arrivals .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 50px;
 }
 
 /* class desc */
@@ -320,7 +322,7 @@ section {
 
 /* tag img */
 #gallery .container .slide .carousel-inner .carousel-item img {
-    width: 300px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     filter: brightness(0.7);
@@ -455,11 +457,27 @@ footer .sosial i {
 
     header {
         width: 100%;
-        height: 90vh;
+        height: 95vh;
+        gap: 0;
     }
 
-    header .container {
-        column-gap: 10px;
+    header .container .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    header .container .desc h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .container .picture {
+        position: relative;
+        top: -50px;
     }
 
     #arrivals {
@@ -467,12 +485,13 @@ footer .sosial i {
         height: 100vh;
     }
 
-    #arrivals .container {
-        gap: 0;
-    }
-
     #arrivals .container .desc {
         width: 500px;
+        position: relative;
+        top: 10%;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     #arrivals .container .slider h3 {
@@ -488,7 +507,7 @@ footer .sosial i {
     }
 
     #arrivals .container .slider {
-        top: 20%;
+        top: 15%;
         left: 0;
         width: 400px;
     }
@@ -500,6 +519,19 @@ footer .sosial i {
     #gallery {
         width: 100%;
         height: 100vh;
+    }
+
+    #gallery .container {
+        width: 100%;
+    }
+
+    #gallery .container .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        top: 10%;
     }
 
     #gallery .fa-angles-up {
