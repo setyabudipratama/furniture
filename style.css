@@ -416,7 +416,7 @@ footer .contact span {
 /* tag i */
 footer .contact i {
     font-size: 1.2rem;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 /* class sosial */
@@ -444,7 +444,7 @@ footer .sosial span {
 /* tag i */
 footer .sosial i {
     font-size: 1.2rem;
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 @media screen and (max-width: 768px) {
