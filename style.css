@@ -463,8 +463,9 @@ footer .sosial i {
 
     header .container .fa-circle-down {
         position: absolute;
-        top: 340%;
+        top: 320%;
         left: 45%;
+        z-index: 1;
     }
 
     header .container .desc {
@@ -483,7 +484,7 @@ footer .sosial i {
 
     header .container .picture {
         position: relative;
-        top: -100px;
+        top: -130px;
     }
 
     #arrivals {
@@ -495,6 +496,7 @@ footer .sosial i {
         position: absolute;
         top: 450%;
         left: 45%;
+        z-index: 1;
     }
 
     #arrivals .container .desc {
@@ -586,12 +588,14 @@ footer .sosial i {
     header .container .fa-circle-down {
         position: absolute;
         top: 500%;
+        z-index: 1;
     }
 
     #arrivals .container .fa-circle-down {
         position: absolute;
         top: 600%;
         left: 45%;
+        z-index: 1;
     }
 
     #arrivals .container .desc {
