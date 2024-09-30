@@ -35,6 +35,9 @@ body {
     font-size: 1.3rem;
 }
 
+.navbar .nav-item .active {
+    font-weight: bold;
+}
 
 /* halaman header */
 header {
