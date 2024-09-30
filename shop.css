@@ -1,0 +1,548 @@
+:root {
+    --white: #ffffff;
+    --background: beige;
+    --black: rgb(21, 21, 21);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(175, 175, 0);
+    padding: 5px 50px;
+    z-index: 1000;
+}
+
+.navbar .fa-instagram,
+.navbar .fa-linkedin-in {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.navbar .nav-item .active {
+    font-weight: bold;
+}
+
+/* halaman header */
+header {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    background: url('gambar/ruang utama.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+header .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .container .desc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 700px;
+    cursor: default;
+}
+
+header .container .desc h1 {
+    font-size: 3rem;
+    color: var(--white);
+    font-family: pacifico;
+}
+
+header .container .desc p {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+header .container .desc button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .desc .btn {
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    border-radius: 50px;
+}
+
+/* halaman product */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* orange sofa */
+#orange {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#orange h2 {
+    color: var(--black);
+    font-size: 2rem;
+    position: relative;
+    top: 10%;
+    left: 41%;
+    font-family: pacifico;
+    cursor: default;
+}
+
+#orange .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#orange .container .slide {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    top: 15%;
+}
+
+#orange .container .slide .card {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+    /* element tidak akan tumbuh meskipun ada ruang */
+    flex-grow: 0;
+    /* element tidak akan menyusut meskipun ada ruang */
+    flex-shrink: 0;
+    /* element tumbuh dengan ukuran sesuai widht dan height */
+    flex-basis: auto;
+}
+
+#orange .container .slide .card .card-body {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+#orange .container .slide .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* brown sofa */
+#brown {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#brown h2 {
+    color: var(--black);
+    font-size: 2rem;
+    position: relative;
+    top: 10%;
+    left: 41%;
+    font-family: pacifico;
+    cursor: default;
+}
+
+#brown .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#brown .container .slide {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    top: 15%;
+}
+
+#brown .container .slide .card {
+    width: 300px;
+    height: auto;
+    margin: 5px 10px;
+    /* element tidak akan tumbuh meskipun ada ruang */
+    flex-grow: 0;
+    /* element tidak akan menyusut meskipun ada ruang */
+    flex-shrink: 0;
+    /* element tumbuh dengan ukuran sesuai widht dan height */
+    flex-basis: auto;
+}
+
+#brown .container .slide .card .card-body {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+#brown .container .slide .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* white sofa */
+#white {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#white h2 {
+    color: var(--black);
+    font-size: 2rem;
+    position: relative;
+    top: 10%;
+    left: 41%;
+    font-family: pacifico;
+    cursor: default;
+}
+
+#white .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+#white .container .slide {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    top: 15%;
+}
+
+#white .container .slide .card {
+    width: 300px;
+    height: auto;
+    margin: 5px 10px;
+    /* element tidak akan tumbuh meskipun ada ruang */
+    flex-grow: 0;
+    /* element tidak akan menyusut meskipun ada ruang */
+    flex-shrink: 0;
+    /* element tumbuh dengan ukuran sesuai widht dan height */
+    flex-basis: auto;
+}
+
+#white .container .slide .card .card-body {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+#white .container .slide .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* halaman top product */
+#top {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#top h2 {
+    color: var(--black);
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    font-family: pacifico;
+    cursor: default;
+}
+
+#top .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* #top .container p {
+    color: var(--black);
+    font-size: 1rem;
+    position: relative;
+    top: 5%;
+} */
+
+#top .container .slide {
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10%;
+}
+
+#top .container .slide .box {
+    background-color: skyblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#top .container .slide .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+#top .container .slide .box .card-body {
+    position: relative;
+    top: -30%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    margin: 0;
+    cursor: default;
+}
+
+#top .container .slide .box .card-body h5 {
+    margin: 0;
+    color: var(--white);
+    transform: translateX(50%); /* awal */
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#top .container .slide .box .card-body p {
+    margin: 0;
+    color: var(--white);
+    transform: translateX(-50%); /* awal */
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#top .container .slide .box .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: gold;
+    transform: translateY(80%); /* awal */
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+/* efek hover tag h5, class star, tag p */
+#top .container .slide .box:hover .card-body h5,
+#top .container .slide .box:hover .star,
+#top .container .slide .box:hover .card-body p {
+    transform: translateX(0); /* akhir */
+    opacity: 1;
+}
+
+/* efek hover tag img */
+#top .container .slide .box img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+}
+
+/* halaman footer */
+footer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* class cipta */
+footer .cipta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 0;
+}
+
+/* tag h5 */
+footer .cipta h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--black);
+    cursor: default;
+}
+
+/* tag img */
+footer .cipta img {
+    position: relative;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* class contact */
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--black);
+}
+
+/* tag h2 */
+footer .contact h2 {
+    margin: 0;
+    font-size: 1rem;
+    cursor: default;
+}
+
+/* tag span */
+footer .contact span {
+    margin: 0;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+/* tag i */
+footer .contact i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+/* class sosial */
+footer .sosial {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: var(--black);
+}
+
+/* tag h2 */
+footer .sosial h2 {
+    margin: 0;
+    font-size: 1rem;
+    cursor: default;
+}
+
+/* tag span */
+footer .sosial span {
+    margin: 0;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+/* tag i */
+footer .sosial i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #white,
+    #brown,
+    #orange,
+    #top {
+        width: 100%;
+        height: 65vh;
+    }
+
+    #orange h2,
+    #brown h2,
+    #white h2 {
+        left: 25%;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    footer .cipta h5 {
+        font-size: 0.8rem;
+    }
+
+    footer .contact,
+    footer .sosial {
+        gap: 0;
+    }
+
+    footer span {
+        font-size: 1rem;
+    }
+}
