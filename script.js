@@ -17,3 +17,8 @@ const gallery = document.querySelector('#gallery .fa-angles-up');
 gallery.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const shop = document.querySelector('.navbar .nav-item:nth-child(2)');
+shop.addEventListener('click', () => {
+    window.location.href="shop.html";
+});
