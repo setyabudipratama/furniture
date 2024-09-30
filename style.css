@@ -378,6 +378,7 @@ footer .cipta h5 {
     margin: 0;
     font-size: 1rem;
     color: var(--black);
+    cursor: default;
 }
 
 /* tag img */
