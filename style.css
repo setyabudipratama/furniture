@@ -229,9 +229,9 @@ section {
 /* tag h3 */
 #arrivals .container .slider h3 {
     position: relative;
-    top: -25%;
+    top: -20%;
     left: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white);
     cursor: default;
     opacity: 0;
@@ -242,7 +242,7 @@ section {
 /* tag p */
 #arrivals .container .slider p {
     position: relative;
-    top: -23%;
+    top: -20%;
     left: 0;
     display: flex;
     justify-content: center;
@@ -276,6 +276,7 @@ section {
     left: 0;
     border: none;
     box-shadow: 5px 5px 10px var(--black);
+    transition: all 0.3s ease;
 }
 
 #arrivals .container .slider .btn:hover {
