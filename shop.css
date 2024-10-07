@@ -339,7 +339,7 @@ section {
     height: 100%;
     position: relative;
     top: 10%;
-    left: 2%;
+    left: 1%;
 }
 
 #top .container .slide .box {
@@ -530,12 +530,39 @@ footer .sosial i {
         left: 25%;
     }
 
+    #orange .container .slide,
+    #brown .container .slide,
+    #white .container .slide {
+        height: 350px;
+    }
+
+    #orange .container .slide .card,
+    #brown .container .slide .card,
+    #white .container .slide .card {
+        width: 230px;
+        height: 340px;
+    }
+
+    #top .container .slide {
+        width: auto;
+    }
+
+    #top .container .slide .box {
+        width: 330px;
+        height: 290px;
+    }
+
     footer {
         width: 100%;
         height: auto;
         margin: 0;
         display: flex;
         justify-content: space-around;
+        column-gap: 5px;
+    }
+
+    footer .cipta {
+        width: 35%;
     }
 
     footer .cipta img {
@@ -550,6 +577,7 @@ footer .sosial i {
     footer .contact,
     footer .sosial {
         gap: 0;
+        width: 35%;
     }
 
     footer span {
