@@ -516,6 +516,18 @@ footer .sosial i {
 
 @media screen and (max-width: 768px) {
 
+    header .container .desc {
+        width: 80%;
+    }
+
+    header .container .desc h1 {
+        font-size: 2.5rem;
+    }
+
+    header .container .desc p {
+        font-size: 0.8rem;
+    }
+
     #white,
     #brown,
     #orange,
@@ -527,7 +539,8 @@ footer .sosial i {
     #orange h2,
     #brown h2,
     #white h2 {
-        left: 25%;
+        left: 30%;
+        font-size: 1.6rem;
     }
 
     #orange .container .slide,
@@ -541,6 +554,10 @@ footer .sosial i {
     #white .container .slide .card {
         width: 230px;
         height: 340px;
+    }
+
+    #top h2 {
+        font-size: 1.7rem;
     }
 
     #top .container .slide {
