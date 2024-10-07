@@ -546,14 +546,16 @@ footer .sosial i {
 
     #arrivals .container .slider h3 {
         position: absolute;
-        top: 35%;
+        top: 27%;
         left: 10%;
+        font-size: 1.2rem;
     }
 
     #arrivals .container .slider p {
         position: absolute;
-        top: 40%;
-        left: 25%;
+        top: 32%;
+        left: 26%;
+        font-size: 0.8rem;
     }
 
     #arrivals .container .slider .btn {
@@ -593,7 +595,7 @@ footer .sosial i {
     }
 
     footer .cipta {
-        width: 35%;
+        width: 40%;
     }
 
     footer .cipta img {
