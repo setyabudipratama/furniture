@@ -407,6 +407,7 @@ footer .contact {
 footer .contact h2 {
     margin: 0;
     font-size: 1rem;
+    font-weight: bold;
     cursor: default;
 }
 
@@ -435,6 +436,7 @@ footer .sosial {
 footer .sosial h2 {
     margin: 0;
     font-size: 1rem;
+    font-weight: bold;
     cursor: default;
 }
 
@@ -467,7 +469,7 @@ footer .sosial i {
 
     header .container .fa-circle-down {
         position: absolute;
-        top: 320%;
+        top: 450%;
         left: 45%;
         z-index: 1;
     }
@@ -484,11 +486,21 @@ footer .sosial i {
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    header .container .desc p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
     }
 
     header .container .picture {
         position: relative;
-        top: -130px;
+        top: -150px;
+        width: 250px;
+        height: 250px;
     }
 
     #arrivals {
@@ -512,10 +524,24 @@ footer .sosial i {
         text-align: center;
     }
 
+    #arrivals .container .desc h1 {
+        font-size: 1.5rem;
+    }
+
+    #arrivals .container .desc .fa-circle-down {
+        position: absolute;
+        top: 420%;
+    }
+
     #arrivals .container .slider {
         top: 7%;
         left: 0;
         width: 400px;
+    }
+    
+    #arrivals .container .slider img {
+        width: 180px;
+        height: 250px;
     }
 
     #arrivals .container .slider h3 {
@@ -553,7 +579,7 @@ footer .sosial i {
     }
 
     #gallery .fa-angles-up {
-        top: 90%;
+        top: 92%;
         left: 80%;
     }
 
@@ -561,10 +587,17 @@ footer .sosial i {
         width: 100%;
         height: auto;
         margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer .cipta img {
+        width: 45px;
+        height: 45px;
     }
 
     footer .cipta h5 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     footer .contact,
@@ -573,7 +606,7 @@ footer .sosial i {
     }
 
     footer span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -595,7 +628,7 @@ footer .sosial i {
         z-index: 1;
     }
 
-    #arrivals .container .fa-circle-down {
+    #arrivals .container .desc .fa-circle-down {
         position: absolute;
         top: 600%;
         left: 45%;
