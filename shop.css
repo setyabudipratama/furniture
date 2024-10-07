@@ -21,8 +21,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-around;
     background-color: rgb(175, 175, 0);
     padding: 5px 50px;
     z-index: 1000;
@@ -301,6 +299,7 @@ section {
     height: 95vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
     top: 0;
@@ -321,6 +320,7 @@ section {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     top: 0;
     left: 0;
@@ -339,6 +339,7 @@ section {
     height: 100%;
     position: relative;
     top: 10%;
+    left: 2%;
 }
 
 #top .container .slide .box {
@@ -467,6 +468,7 @@ footer .contact {
 footer .contact h2 {
     margin: 0;
     font-size: 1rem;
+    font-weight: bold;
     cursor: default;
 }
 
@@ -495,6 +497,7 @@ footer .sosial {
 footer .sosial h2 {
     margin: 0;
     font-size: 1rem;
+    font-weight: bold;
     cursor: default;
 }
 
@@ -518,7 +521,7 @@ footer .sosial i {
     #orange,
     #top {
         width: 100%;
-        height: 65vh;
+        height: 75vh;
     }
 
     #orange h2,
@@ -531,10 +534,17 @@ footer .sosial i {
         width: 100%;
         height: auto;
         margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer .cipta img {
+        width: 45px;
+        height: 45px;
     }
 
     footer .cipta h5 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     footer .contact,
@@ -543,6 +553,6 @@ footer .sosial i {
     }
 
     footer span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
