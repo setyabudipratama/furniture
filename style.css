@@ -589,6 +589,11 @@ footer .sosial i {
         margin: 0;
         display: flex;
         justify-content: space-around;
+        column-gap: 5px;
+    }
+
+    footer .cipta {
+        width: 35%;
     }
 
     footer .cipta img {
@@ -603,6 +608,7 @@ footer .sosial i {
     footer .contact,
     footer .sosial {
         gap: 0;
+        width: 35%;
     }
 
     footer span {
