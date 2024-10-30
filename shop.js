@@ -48,13 +48,26 @@ const spanFooter = document.querySelectorAll('footer span');
 
 
 // rubah ukuran teks h2
-const h2Teks = document.querySelectorAll('section h2');
+const h2Orange = document.querySelector('#orange h2');
+const h2Brown = document.querySelector('#brown h2');
+const h2White = document.querySelector('#white h2');
+const h2Product = document.querySelector('#top h2');
 
 function applyResponsiveStyles() {
     if (window.innerWidth < 767) {
-        h2Teks.forEach(h2 => {
-            h2.style.fontSize = '1.3rem';
+        Object.assign(h2Orange.style, {
+            fontSize: '1.3rem',
+            left: '31%',
         });
+        Object.assign(h2Brown.style, {
+            fontSize: '1.3rem',
+            left: '31%',
+        });
+        Object.assign(h2White.style, {
+            fontSize: '1.3rem',
+            left: '31%',
+        });
+        h2Product.style.fontSize = '1.3rem';
         Object.assign(footer.style, {
             justifyContent: 'center',
             gap: '0',
