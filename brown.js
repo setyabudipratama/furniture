@@ -17,21 +17,24 @@ back.addEventListener('click', () => {
 });
 
 
-// rubah border radius container
+// rubah background halaman
+const body = document.querySelector('body');
+Object.assign(body.style, {
+    animation: 'none',
+    backgroundColor: 'beige',
+});
+
+// rubah ukuran container
 const containerProduct = document.querySelector('#product .container');
 Object.assign(containerProduct.style, {
+    height: '480px',
+    top: '5%',
     borderRadius: '10px',
-    height: '60%',
 })
-
-// rubah posisi button buy
-const btnBuy = document.querySelector('#product .container .btn');
 
 function applyResponsiveStyles() {
     if (window.innerWidth < 767) {
         back.style.top = '10%';
-        btnBuy.style.top = '25px';
-        suka.style.top = '-9px';
     }
 }
 
