@@ -45,6 +45,11 @@ const sliderArrivals = document.querySelector('#arrivals .slider');
 // rubah posisi button arrivals
 const btnArrivals = document.querySelector('#arrivals .fa-circle-down');
 
+// rubah ukuran teks h1
+const h1Header = document.querySelector('header h1');
+const h1Arrivals = document.querySelector('#arrivals h1');
+const h1Gallery = document.querySelector('#gallery h1');
+
 // rubah footer
 const footer = document.querySelector('footer');
 Object.assign(footer.style, {
@@ -66,6 +71,9 @@ function applyResponsiveStyles() {
         viewportArrivals.style.height = '70vh';
         sliderArrivals.style.top = '10%';
         btnArrivals.style.top = '490px';
+        h1Header.style.fontSize = '1.3rem';
+        h1Arrivals.style.fontSize = '1.3rem';
+        h1Gallery.style.fontSize = '1.3rem';
         Object.assign(footer.style, {
             justifyContent: 'center',
             gap: '0',
