@@ -15,3 +15,26 @@ const back = document.getElementById('back');
 back.addEventListener('click', () => {
     window.location.href = 'shop.html';
 });
+
+
+// rubah border radius container
+const containerProduct = document.querySelector('#product .container');
+Object.assign(containerProduct.style, {
+    borderRadius: '10px',
+    height: '60%',
+})
+
+// rubah posisi button buy
+const btnBuy = document.querySelector('#product .container .btn');
+
+function applyResponsiveStyles() {
+    if (window.innerWidth < 767) {
+        back.style.top = '10%';
+        btnBuy.style.top = '25px';
+        suka.style.top = '-9px';
+    }
+}
+
+// panggil fungsi
+applyResponsiveStyles();
+window.addEventListener('resize', applyResponsiveStyles);
