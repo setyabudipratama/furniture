@@ -42,6 +42,9 @@ const viewportArrivals = document.getElementById('arrivals');
 // rubah tinggi template arrivals
 const sliderArrivals = document.querySelector('#arrivals .slider');
 
+// rubah posisi button arrivals
+const btnArrivals = document.querySelector('#arrivals .fa-circle-down');
+
 // rubah footer
 const footer = document.querySelector('footer');
 Object.assign(footer.style, {
@@ -61,7 +64,8 @@ function applyResponsiveStyles() {
             top: '500px',
         });
         viewportArrivals.style.height = '70vh';
-        sliderArrivals.style.top = '20%';
+        sliderArrivals.style.top = '10%';
+        btnArrivals.style.top = '490px';
         Object.assign(footer.style, {
             justifyContent: 'center',
             gap: '0',
